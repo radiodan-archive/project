@@ -1,4 +1,4 @@
-Project name: Radiodan - A programmable internet radio
+Radiodan - A programmable internet radio
 ======================================================
 
 What?

@@ -31,12 +31,15 @@ Who?
 The initial development stage would involve a team of three (Dan, Libby, Andrew N) working in three closely-tied streams, over the course of 1 full sprint cycle.
 
 1. Radiodan "Core" Development
+
     Dan is currently the sole developer of  [Radiodan](http://github.com/pixelblend/radiodan). He has begun to abstract the core elements from his initial 10% time hacks into a software library that other projects can build from. He would spend the initial sprint finishing and documenting this work in order to produce a 1.0 release as a publicly available Ruby gem. The initial feature set of this would be heavily influenced by the prototypes being created in parallel by the rest of the team. 
 
 2. Software prototypes built on Radiodan
+
   Andrew N and Libby would work on a simple prototype that exhibits the potential of a programmable radio device. Libby has produced an enormous list of possible applications for us to choose from. ** either paste here or link to separate confluence page **
 
 3. Physical Prototype
+
   Libby and Dan would improve the [initial efforts](http://planb.nicecupoftea.org/2013/04/16/archers-avoider/) towards creating a reproducible physical prototype of radiodan. Dan has already begun some of the [work](https://github.com/pixelblend/radiodan_example) in 10% time.
   
   The aim is to allow a novice raspberry pi owner to setup, configure and run a radio-dan powered BBC Radio device. This would build upon the work in point 2.

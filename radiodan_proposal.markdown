@@ -46,11 +46,11 @@ The work is planned to consist of
 Who?
 ----
 
-The initial development stage would involve a team of three (Dan, Libby, Andrew N) working in two closely-tied streams, over the course of one full sprint cycle.
+The initial development stage would involve Dan and the apps team working in two closely-tied streams, over the course of one full sprint cycle.
 
 1. Radiodan "Core" Development
 
-    Dan is currently the sole developer of  [Radiodan](http://github.com/pixelblend/radiodan). He has begun to abstract the core elements from his initial 10% time hacks into a software library that other projects can build from. He would spend the initial sprint finishing and documenting this work in order to produce a 1.0 release as a publicly available Ruby gem. The initial feature set of this would be heavily influenced by the prototypes being created in parallel by the rest of the team. 
+    Dan is currently the sole developer of [Radiodan](http://github.com/pixelblend/radiodan). He has begun to abstract the core elements from his initial 10% time hacks into a software library that other projects can build from. He would spend the initial sprint finishing and documenting this work in order to produce a 1.0 release as a publicly available Ruby gem. The initial feature set of this would be heavily influenced by the prototypes being created in parallel by the rest of the team. 
 
 2. Hardware / Software prototype built on Radiodan
 

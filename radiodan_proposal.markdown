@@ -16,7 +16,9 @@ Why?
 
 IRFS has worked with radio applications for several years, notably and successfully in collaboration with [Frontier Silicon and Global Radio on RadioDNS applications](http://www.bbc.co.uk/blogs/researchanddevelopment/2011/11/radiotag-wins-innovation-award.shtml) including ways to 'bookmark' radio programmes. Rapidly prototyping on radio hardware isn't really possible - for very good reasons - price and reliability are more important for production radio devices than ease of use for developers. Radiodan will allow us to quickly test and prune potentially interesting areas of radio research, which we can feed back into work with manufacturers and other organisations. 
 
-Working in the open will allow us to test the hypothesis that if it was made easy enough to do, there would be an explosion of different applications for radio. Making it simple for a large number of people is key. A rough analogy is 'view source' for radio, which allowed anyone with a browser to see how to copy and change a webpage. Working in public will help us find people interested in this area from the start and incorporate their ideas into the documentation and underlying APIs.
+Working in the open will allow us to test the hypothesis that if it was made easy enough to do, there would be a huge increase in creative ideas for radio. Making it simple for a large number of people is key. A rough analogy is 'view source' for radio: view source for the Web allowed anyone with a browser to see how to copy and change a webpage. View source for radio should allow anyone with Radiodan to see how to make something like it. 
+
+Working in public will help us find people interested in this area from the start and incorporate their ideas into the documentation and underlying APIs.
 
 As a starting point we aim to enable prototyping around topics such as the following:
 
@@ -26,7 +28,7 @@ As a starting point we aim to enable prototyping around topics such as the follo
 * Iterative testing of physical interfaces
 * Personalised radio
 
-The work links closely with work in BBC R&D on the Internet of Things, particularly enabling work with [Tangible Media-Affordances](http://www.bbc.co.uk/rd/events/tangible-media-affordances). It could lead to generalisations of the recent R&D work on [Perceptive Radio](http://wearemudlark.com/blog/the-perceptive-radio-a-project-for-bbc-rd/). It will enable and continue work on [Authentication for Connected Devices](http://www.bbc.co.uk/rd/blog/2013/03/authentication-for-connected-tvs), including potentially developing and extending [RadioTAG](http://www.bbc.co.uk/blogs/researchanddevelopment/2011/09/radiotag.shtml) and other RadioDNS work, and will feed into architectural considerations around [egBox](http://www.bbc.co.uk/blogs/researchanddevelopment/2012/08/irfs-weeknotes-120.shtml).
+The work links closely with work in BBC R&D on the Internet of Things, potentially enabling work with [Tangible Media-Affordances](http://www.bbc.co.uk/rd/events/tangible-media-affordances). It could lead to generalisations of the recent R&D work on [Perceptive Radio](http://wearemudlark.com/blog/the-perceptive-radio-a-project-for-bbc-rd/). It will enable and continue work on [Authentication for Connected Devices](http://www.bbc.co.uk/rd/blog/2013/03/authentication-for-connected-tvs), feed into architectural considerations around [egBox](http://www.bbc.co.uk/blogs/researchanddevelopment/2012/08/irfs-weeknotes-120.shtml), and could potentially involve developing and extending [RadioTAG](http://www.bbc.co.uk/blogs/researchanddevelopment/2011/09/radiotag.shtml) and other RadioDNS work. There are connections around R&D's [Universal Control API](http://www.bbc.co.uk/blogs/researchanddevelopment/2011/02/universal-control.shtml) for accessibility and orchestrated media, designed for TV but also more widely applicable to radio.
 
 
 Technology and approach
@@ -39,7 +41,6 @@ The work is planned to consist of
 * defining initial applications that Radiodan should support
 * developing APIs suitable for controlling the functionality
 * consolidating the existing code to support easy installation on suitable hardware
-
 
 
 Who?

@@ -54,5 +54,5 @@ The initial development stage would involve Dan and the apps team working in two
 
 2. Hardware / Software prototype built on Radiodan
 
-    Andrew N, Dan and Libby would work on a simple prototype that exhibits the potential of a programmable radio device, creating a reproducible physical prototype of Radiodan. Dan has already begun some of the [work](https://github.com/pixelblend/radiodan_example) in 10% time. The aim is to allow a novice raspberry pi owner to setup, configure and run a Radiodan-powered BBC Radio device.
+    Dan and the apps team would work on a simple prototype that exhibits the potential of a programmable radio device, creating a reproducible physical prototype of Radiodan. Dan has already begun some of the [work](https://github.com/pixelblend/radiodan_example) in 10% time. The aim is to allow a novice raspberry pi owner to setup, configure and run a Radiodan-powered BBC Radio device.
 

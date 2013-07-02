@@ -29,7 +29,7 @@ As with a lot of these ideas, a few things came together that would make it feas
 
 Dan set me up with his software ('Radiodan'), helpfully available from (git)[https://github.com/pixelblend/radiodan.git]. We got it running on my Mac, and then set up the shrimping.it Arduino clone that Cefn helped us make attached to my machine via the USB port. Jasmine helped us wire up a button which sent a message over the serial port. So then all we had to do was create an interface between the serial port and Radiodan.
 
-Radiodan is a Ruby-wrapper around the MPD audio player. Dan wrote a small utility for it that makes it switch streams for a specified number of seconds if a specific file has been changed: it checks every second if that's the case. So the button just had to change the file.
+Radiodan is a Ruby-wrapper around the MPD audio player. Dan wrote a small utility for it that makes it switch channel streams for a specified number of seconds if a specific file has been changed: it checks every second if that's the case. So the button just had to change the file.
 
 We tried a number of different ideas for interfacing with the Arduino clone. We tried (Noduino)[http://semu.github.io/noduino], but under time pressure I couldn't get it to work. Eventually Sean wrote some Ruby code that talked to the serial port via the Ruby serialport gem – you can see the code (here)[http://planb.nicecupoftea.org/2013/04/16/archers-avoider/] - most of the code and the time taken was handling 'bouncing' – a button push is actually quite a wobbly experience which needs to be translated into a binary one.
 
@@ -51,5 +51,7 @@ This is the final version for the day. You can see the working big red button an
 I spent a bit of time making it wireless – documented (on my blog here)[http://planb.nicecupoftea.org/2013/04/16/archers-avoider/] but the idea that's got me more interested is – what would it take so that anyone could make a customised radio like this? And that's the idea that we are exploring at the moment. 
 
 Working with members of Bristol Hackspace and others, we're currently creating various applications of Radiodan – for example a time-travel radio that lets you go back to the previous day, a radio that speaks the name of the programme currently playing, or 'telly on the radio' that plays still images synced with an audio version of a TV programme. Using those prototypes, and working in the open with whoever is interested, we think we'll get a good idea of a simple kit and API that anyone with some html / javascript programming experience can use to make their own 'Wrong Radio'. 
+
+The Archers Avoider itself needs more thinking about what would replace it (and how long for - does it need access to the scahedule?).
 
 ![Hackday prototype prototype](images/wrong_wradio.jpg)

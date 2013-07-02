@@ -1,4 +1,4 @@
 proposal
 ========
 
-Proposal documents for the radiodan project
+Proposal documents for the radiodan project.

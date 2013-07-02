@@ -32,6 +32,8 @@ An experience of continuous audio which you seldom interact with, that forms a b
 * replay radio from this day 10-20-30 years ago
 * play everything on a topic
 
+* Tv on the radio - synced pictures on a seocnd screen
+
 From (Bristol Hackspace discussions)[http://www.flickr.com/photos/nicecupoftea/sets/72157634373882934/]
 
 * time travel radio - twist one knob for genre or channel and the other for going back in time through a schedule

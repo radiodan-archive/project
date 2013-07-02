@@ -18,6 +18,7 @@ An experience of continuous audio which you seldom interact with, that forms a b
 * beautiful physical devices
 
 * archers (/ Today programme) panic button (click a button on the device to switch to a specified or random alternative channel using the schedule to determine when to switch back again) - *made as the (Archers Avoider)[../archers_avoider]* 
+** needs more work to work out the best replacements for the avoided items
 * shh! button
 * news / now! weather / now buttons
 * social radio like radiopop
@@ -39,6 +40,8 @@ From (Bristol Hackspace discussions)[http://www.flickr.com/photos/nicecupoftea/s
 * learned / exciting filters
 * autotune presenter voices
 * John Peel radio?
+* a kit (buy as a set, or a list of parts plus documentation) to allow you to make your own 'wrong radio'
+* simple audio pairing of devices
 
 ## Inspirations
 

@@ -47,8 +47,8 @@ From (Bristol Hackspace discussions)[http://www.flickr.com/photos/nicecupoftea/s
 
 ## Inspirations
 
-* (Music Bore)[http://blog.dbtune.org/post/2009/07/13/Music-Hack-Day-and-the-MusicBore]
-* (Frijlets)[http://www.drewbuttons.com/Frijlets]
-* (Olinda)[http://berglondon.com/projects/olinda/]
-* (Radiopop)[http://www.bbc.co.uk/blogs/radiolabs/2008/09/radio_pop_social_radio_listeni.shtml]
-* (Radio-4-Matic)[http://www.raspberrypi.org/archives/3019]
+* [Music Bore](http://blog.dbtune.org/post/2009/07/13/Music-Hack-Day-and-the-MusicBore)
+* [Frijlets](http://www.drewbuttons.com/Frijlets)
+* [Olinda](http://berglondon.com/projects/olinda/)
+* [Radiopop](http://www.bbc.co.uk/blogs/radiolabs/2008/09/radio_pop_social_radio_listeni.shtml)
+* [Radio-4-Matic](http://www.raspberrypi.org/archives/3019)

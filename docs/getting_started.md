@@ -11,40 +11,24 @@ the more people who can build them, the more interesting the radios will be.
 Things you will need
 ====================
 
-A wifi connection - it can be open or password protected (WPA or WEP) but this won't work if it's a captive 
-portal where you have to go through a web page to get connected.
-
-An SD card reader - computer commonly have them built in, or they can be bought very cheaply.
-
-A computer suitable for putting data on the SD card - Windows, Linux or Mac OS X
-
-Raspberry Pi
-
-The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio out and HDMI out. It 
+* A wifi connection - it can be open or password protected (WPA or WEP) but this won't work if it's a captive portal where you have to go through a web page to get connected.
+* An SD card reader - computer commonly have them built in, or they can be bought very cheaply.
+* A computer suitable for putting data on the SD card - Windows, Linux or Mac OS X
+* Raspberry Pi
+-- The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio out and HDMI out. It 
 doesn't come with a keyboard, monitor, mouse or harddrive - it's powered from an SD card of the kind you get in 
 cameras. You can buy them from Farnell or @@
-
-SD Card
-
-Get a 4GB or higher 10-speed card like this one@@. It can be a mini SD card with an adaptor, like this one@@.
-
-Speaker
-
-Anything with a standard jack will do. There are some very cheap tiny speakers available, such as this one@@.
-
-Wifi card - get one with @@ chipset, like this one
-
-USB hub@@
-
-USB extender cable@@
-
-USB to mini-USB cable@@
-
-USB plug, like this one@@
-
-A box to put it in
-
-An LED like this one@@. Strictly speaking you could do without this, but it makes things much easier to have it.
+* SD Card
+-- Get a 4GB or higher 10-speed card like this one@@. It can be a mini SD card with an adaptor, like this one@@.
+* Speaker
+-- Anything with a standard jack will do. There are some very cheap tiny speakers available, such as this one@@.
+* Wifi card - get one with @@ chipset, like this one
+* A USB hub@@
+* USB extender cable@@
+* USB to mini-USB cable@@
+* USB plug, like this one@@
+* A box to put it in
+* An LED like this one@@. Strictly speaking you could do without this, but it makes things much easier to have it.
 
 
 The approximate cost should be about £60.
@@ -63,32 +47,34 @@ Getting started
 1. Download this @@SD Card image
 
 This is a custom image that we have created from 
-- [Raspian Wheezy image](http://downloads.raspberrypi.org/raspbian_latest)(zip)
-- [Radiodan cold_start](https://github.com/radiodan/cold_start) (github link) which includes
--- [radiodan](https://github.com/pixelblend/radiodan) (github link)
--- [radiodan_example](https://github.com/radiodan/radiodan_example) (github link)
+
+* [Raspian Wheezy image](http://downloads.raspberrypi.org/raspbian_latest) (zip)
+* [Radiodan cold_start](https://github.com/radiodan/cold_start) (github link) which includes
+** [radiodan](https://github.com/pixelblend/radiodan) (github link)
+** [radiodan_example](https://github.com/radiodan/radiodan_example) (github link)
 
 2. Put the image on the SD card using the SD card reader
-- Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf) (pdf)
-- if you are comfortable using dd on linux of Mac OS X you can just do:
+
+* Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf) (pdf)
+* If you are comfortable using dd on linux of Mac OS X you can just do:
+
 
     diskutil list
-    # insert SD card
+    \# insert SD card
 
     diskutil list
 
-    # identify your SD card as the new one
-    # where 'n' is a number
+    \# identify your SD card as the new one
+    \# where 'n' is a number
     diskutil unmountDisk /dev/diskn
 
-    # Downloads/ is whereever it downloaded to
+    \# Downloads/ is whereever it downloaded to
     dd bs=1m of=/dev/disk2 if=~/Downloads/radiodn_0.1.img
 
 3. Eject the disk from your SD card reader and assemble the components, like this:
 
 @@include an led
  
-
 4. Turn the Pi on and attach it to the wifi
 
 In about 1 - 2 minutes you should see the led light up and flash green@@. When this happens, on your main 

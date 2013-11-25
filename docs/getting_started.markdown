@@ -49,31 +49,21 @@ Getting started
 This is a custom image that we have created from 
 
 * [Raspian Wheezy image](http://downloads.raspberrypi.org/raspbian_latest) (zip)
-* [Radiodan cold_start](https://github.com/radiodan/cold_start) (github link) which includes
-* [radiodan](https://github.com/pixelblend/radiodan) (github link)
-* [radiodan_example](https://github.com/radiodan/radiodan_example) (github link)
+* [Radiodan cold_start](https://github.com/radiodan/cold_start) (github link) which includes [radiodan](https://github.com/pixelblend/radiodan) (github link) and [radiodan_example](https://github.com/radiodan/radiodan_example) (github link)
 
 ## 2. Put the image on the SD card using the SD card reader
 
-* Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf) (pdf)
-* If you are comfortable using dd on linux of Mac OS X you can just do:
+Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf) (pdf). If you are comfortable using dd on linux of Mac OS X you can just do:
 
-
-     diskutil list
-
-     \# insert SD card
-
-     diskutil list
-
-     \# identify your SD card as the new one
-
-     \# where 'n' is a number
-
-     diskutil unmountDisk /dev/diskn
-
-     \# Downloads/ is whereever it downloaded to
-
-     dd bs=1m of=/dev/disk2 if=~/Downloads/radiodn_0.1.img
+    # list the disks
+    diskutil list
+    # insert SD card
+    diskutil list
+    # identify your SD card as the new one
+    # where 'n' is a number
+    diskutil unmountDisk /dev/diskn
+    # Downloads/ is whereever it downloaded to
+    dd bs=1m of=/dev/disk2 if=~/Downloads/radiodn_0.1.img
 
 ## 3. Eject the disk from your SD card reader and assemble the components, like this:
 

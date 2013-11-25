@@ -44,49 +44,53 @@ to have them.
 Getting started
 ===============
 
-1. Download this @@SD Card image
+## 1. Download this @@SD Card image
 
 This is a custom image that we have created from 
 
 * [Raspian Wheezy image](http://downloads.raspberrypi.org/raspbian_latest) (zip)
 * [Radiodan cold_start](https://github.com/radiodan/cold_start) (github link) which includes
-** [radiodan](https://github.com/pixelblend/radiodan) (github link)
-** [radiodan_example](https://github.com/radiodan/radiodan_example) (github link)
+* [radiodan](https://github.com/pixelblend/radiodan) (github link)
+* [radiodan_example](https://github.com/radiodan/radiodan_example) (github link)
 
-2. Put the image on the SD card using the SD card reader
+## 2. Put the image on the SD card using the SD card reader
 
 * Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf) (pdf)
 * If you are comfortable using dd on linux of Mac OS X you can just do:
 
 
-    diskutil list
-    \# insert SD card
+     diskutil list
 
-    diskutil list
+     \# insert SD card
 
-    \# identify your SD card as the new one
-    \# where 'n' is a number
-    diskutil unmountDisk /dev/diskn
+     diskutil list
 
-    \# Downloads/ is whereever it downloaded to
-    dd bs=1m of=/dev/disk2 if=~/Downloads/radiodn_0.1.img
+     \# identify your SD card as the new one
 
-3. Eject the disk from your SD card reader and assemble the components, like this:
+     \# where 'n' is a number
+
+     diskutil unmountDisk /dev/diskn
+
+     \# Downloads/ is whereever it downloaded to
+
+     dd bs=1m of=/dev/disk2 if=~/Downloads/radiodn_0.1.img
+
+## 3. Eject the disk from your SD card reader and assemble the components, like this:
 
 @@include an led
  
-4. Turn the Pi on and attach it to the wifi
+## 4. Turn the Pi on and attach it to the wifi
 
 In about 1 - 2 minutes you should see the led light up and flash green@@. When this happens, on your main 
 computer, look for a new wifi network called "radiodan-configuration'. Join this network, and you should see a 
 web page pop up (like a 'captive portal' you get in some wifi networks). Follow the instructions and select a 
 wifi network to connect to and give it the password. Click 'reboot now', and rejoin your usual wifi network.
 
-5. Listen to the radio
+## 5. Listen to the radio
 
 If all that has worked, 1 - 2 minutes after the reboot, you should hear Radio 1 playing.
 
-6. Control it using the webpage
+## 6. Control it using the webpage
 
 You can control your radio by adding buttons and dials (see below@@), but also by going to 
 

@@ -12,7 +12,7 @@ radios will be.
 Things you will need
 ====================
 
-* An [SD card reader](https://www.google.co.uk/search?q=SD+card+reader) - computers commonly have them built in, or they can be bought very cheaply.
+* An [SD card reader](https://www.google.co.uk/search?q=SD+card+reader) - computers sometimes have them built in, or they can be bought very cheaply.
 * A computer suitable for putting data on the SD card - Windows, Linux or Mac OS X.
 * A wifi connection - it can be open or password protected (WPA or WEP), but our cold_start proceedure which links the Raspberry PI to a wifi network won't work if it's a captive portal where you have to go through a web page to get connected. It also won't work with proxies at the moment.
 * A [Raspberry Pi](http://www.raspberrypi.org). The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio and video. It doesn't come with a keyboard, monitor, mouse or hard drive - it's powered from an SD card of the kind you get in cameras. You can buy Pis from [Farnell](http://export.farnell.com/rp/order/) or [RS](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
@@ -23,7 +23,7 @@ Things you will need
 * A USB extender cable, approximately 2 metres long, for example [this one](http://www.amazon.co.uk/Plug-Socket-Extension-Cable-Speed/dp/B00077DJK4/ref=sr_1_1)
 * A [USB to mini-USB cable](http://www.amazon.co.uk/female-Micro-male-Cable-Adapter/dp/B005GI2VMG/ref=sr_1_4)
 * A USB mains plug [like this one](http://www.amazon.co.uk/ADAPTER-CHARGER-BLACKBERRY-SAMSUNG-TOMTOM/dp/B00CLR00JQ/ref=sr_1_1)
-* A box to put it in, a cardboard one is good. We have made some templates for you to try, or you could use an old [teabag box or something similar](http://www.flickr.com/photos/nicecupoftea/9564907822/in/set-72157635210928095).
+* A box to put it in, a cardboard one is good. We have made some [templates](box_design.markdown) for you to try, or you could use an old [teabag box](http://www.flickr.com/photos/nicecupoftea/9564907822/in/set-72157635210928095) or something similar.
 * An [RGB LED like this one](http://www.coolcomponents.co.uk/triple-output-led-rgb.html). Strictly speaking you could do without this, but it makes things much easier to have it.
 
 
@@ -62,7 +62,7 @@ Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uplo
 
 ## 3. Eject the disk from your SD card reader and assemble the components, like this:
 
-@@include an led
+finish me @@include an led@@
  
 ## 4. Turn the Pi on and attach it to the wifi
 

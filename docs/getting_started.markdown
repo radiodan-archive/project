@@ -11,23 +11,21 @@ the more people who can build them, the more interesting the radios will be.
 Things you will need
 ====================
 
-* A wifi connection - it can be open or password protected (WPA or WEP) but this won't work if it's a captive portal where you have to go through a web page to get connected.
 * An [SD card reader](https://www.google.co.uk/search?q=SD+card+reader) - computers commonly have them built in, or they can be bought very cheaply.
 * A computer suitable for putting data on the SD card - Windows, Linux or Mac OS X.
+* A wifi connection - it can be open or password protected (WPA or WEP), but our cold_start proceedure which links the Raspberry PI to a wifi network won't work if it's a captive portal where you have to go through a web page to get connected. It also won't work with proxies at the moment.
 * A [Raspberry Pi](http://www.raspberrypi.org)
--- The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio and video. It 
-doesn't come with a keyboard, monitor, mouse or harddrive - it's powered from an SD card of the kind you get in 
-cameras. You can buy Pis from [Farnell](http://export.farnell.com/rp/order/) or [RS](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
+** The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio and video. It doesn't come with a keyboard, monitor, mouse or hard drive - it's powered from an SD card of the kind you get in cameras. You can buy Pis from [Farnell](http://export.farnell.com/rp/order/) or [RS](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
 * SD Card
--- Get a 4GB or larger class 10 card [like this one](http://www.dabs.com/products/sandisk-ultra-secure-16gb-sd-card---30mb-s---class-10---sdhc-uhs-i-89F3.html?refs=57120000&src=2). It's quite hard to get smaller than 16GB cards, so you could buy be a [micro SD card](http://www.dabs.com/products/kingston-microsd-4gb-class-10-memory-card---adaptor-not-included-7MBL.html) (but remember to buy [http://www.amazon.co.uk/MICRO-SD-TO-CARD-ADAPTOR/dp/B0019AJJRK](an adaptor, like this one))
+** Get a 4GB (or larger) class 10 card [like this one](http://www.dabs.com/products/sandisk-ultra-secure-16gb-sd-card---30mb-s---class-10---sdhc-uhs-i-89F3.html?refs=57120000&src=2). It's quite hard to find standard cards smaller than 16GB, so you could use a [micro SD card](http://www.dabs.com/products/kingston-microsd-4gb-class-10-memory-card---adaptor-not-included-7MBL.html) (but remember to buy [http://www.amazon.co.uk/MICRO-SD-TO-CARD-ADAPTOR/dp/B0019AJJRK](an adaptor, like this one))
 * Speaker
--- Anything with a standard jack will do. There are some very cheap tiny speakers available, [such as this one](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1).
-* Wifi card - it's important to get one with the *RT5370 chipset*, like [this](http://www.ebay.co.uk/itm/WIFI-150MBPS-WIRELESS-ADAPTOR-802-11-B-G-N-LAN-NETWORK-MINI-USB-DONGLE-ADAPTER-/321023374826?_trksid=p2054897.l4275) or [this](http://www.ebay.co.uk/itm/Mini-150Mbps-150M-USB-2-0-WiFi-Wireless-LAN-Network-Card-802-11-n-g-b-Adapter-/120912927894?_trksid=p2054897.l4276)
+** Anything with a standard jack will do. There are some very cheap tiny speakers available, [such as this one](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1).
+* A  USB Wifi card - it's important to get one with the *RT5370 chipset*, like [this](http://www.ebay.co.uk/itm/WIFI-150MBPS-WIRELESS-ADAPTOR-802-11-B-G-N-LAN-NETWORK-MINI-USB-DONGLE-ADAPTER-/321023374826?_trksid=p2054897.l4275) or [this](http://www.ebay.co.uk/itm/Mini-150Mbps-150M-USB-2-0-WiFi-Wireless-LAN-Network-Card-802-11-n-g-b-Adapter-/120912927894?_trksid=p2054897.l4276)
 * A [USB hub](https://www.google.co.uk/search?q=usb+hub), which doesn't have to be powered
 * A USB extender cable, approximately 2 metres long, for example [this one](http://www.amazon.co.uk/Plug-Socket-Extension-Cable-Speed/dp/B00077DJK4/ref=sr_1_1)
 * A [USB to mini-USB cable](http://www.amazon.co.uk/female-Micro-male-Cable-Adapter/dp/B005GI2VMG/ref=sr_1_4)
-* A USB plug, [like this one](http://www.amazon.co.uk/ADAPTER-CHARGER-BLACKBERRY-SAMSUNG-TOMTOM/dp/B00CLR00JQ/ref=sr_1_1)
-* A box to put it in, a cardboard one is good. We have made some templates for you@@
+* A USB mains plug [like this one](http://www.amazon.co.uk/ADAPTER-CHARGER-BLACKBERRY-SAMSUNG-TOMTOM/dp/B00CLR00JQ/ref=sr_1_1)
+* A box to put it in, a cardboard one is good. We have made some templates for you to try, or you could use an old [teabag box or something similar](http://www.flickr.com/photos/nicecupoftea/9564907822/in/set-72157635210928095).
 * An [RGB LED like this one](http://www.coolcomponents.co.uk/triple-output-led-rgb.html). Strictly speaking you could do without this, but it makes things much easier to have it.
 
 
@@ -48,7 +46,7 @@ Getting started
 This is a custom image that we have created from 
 
 * [Raspian Wheezy image](http://downloads.raspberrypi.org/raspbian_latest) (zip)
-* [Radiodan cold_start](https://github.com/radiodan/cold_start) (github link) which includes [radiodan](https://github.com/pixelblend/radiodan) (github link) and [radiodan_example](https://github.com/radiodan/radiodan_example) (github link)
+* [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes [radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example)
 
 ## 2. Put the image on the SD card using the SD card reader
 
@@ -61,7 +59,7 @@ Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uplo
     # identify your SD card as the new one
     # where 'n' is a number
     diskutil unmountDisk /dev/diskn
-    # Downloads/ is whereever it downloaded to
+    # Downloads/ is wherever it downloaded to
     dd bs=1m of=/dev/disk2 if=~/Downloads/radiodn_0.1.img
 
 ## 3. Eject the disk from your SD card reader and assemble the components, like this:
@@ -71,9 +69,11 @@ Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uplo
 ## 4. Turn the Pi on and attach it to the wifi
 
 In about 1 - 2 minutes you should see the led light up and flash green@@. When this happens, on your main 
-computer, look for a new wifi network called "radiodan-configuration'. Join this network, and you should see a 
-web page pop up (like a 'captive portal' you get in some wifi networks). Follow the instructions and select a 
-wifi network to connect to and give it the password. Click 'reboot now', and rejoin your usual wifi network.
+computer, look for a new wifi network called 'radiodan-configuration'.
+
+Join this network, and you should see a web page pop up (like a 'captive portal' you get iwith some wifi networks). 
+Follow the instructions and select a wifi network to connect to and give it the password. Click 'reboot now', and 
+rejoin your usual wifi network.
 
 ## 5. Listen to the radio
 
@@ -110,15 +110,14 @@ machine is booted.
 Adding buttons and dials
 ========================
 
-If you've got this far, you should be able to control your radio using its webpage, but it's much more fun to wire 
-up some physical buttons to make it more like a real radio.
+If you've got this far, you should be able to control your radio using its built-in webpage, but it's much more 
+fun to wire up some physical buttons to make it more like a real radio.
 
 For this you will need:
 
-
 * Two [rotary encoders]((http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html)) with [knobs](http://www.coolcomponents.co.uk/clear-plastic-knob.html). Get ones with a screw-in part to fix them to the box.
-* A clicky button, for example [this one](http://www.coolcomponents.co.uk/concave-arcade-button-red.html), again, find one that you can screw to your box. The clickiness gives better feedback to whoever clicks it that it's been pushed correctly.
+* A clicky button, for example [this one](http://www.coolcomponents.co.uk/concave-arcade-button-red.html), again, find one that you can screw to your box. The clickiness gives better feedback to the person clicking it that it's been pushed correctly.
 * Some jumper wire. Easiest is to get male to female, like [this](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html)
-* Spade connectors suitable for your buttons and also for your rotary encoders@@. For example [these](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) - check that they are the correct size for your button's connectors. These are just a way for you to connect your buttons to your Pi without soldering. 
-* A crimper, [like this one](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (you may be able to make do with pliars, but I wouldn't recommend it), to join your spade connectors with your wire.
+* Spade connectors suitable for your buttons and also for your rotary encoders@@. For example [these](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) - check that they are the correct size for your button's connectors. These are just a way for you to connect your buttons to your Pi without soldering. You could also use crocodile clips.
+* A crimper, [like this one](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (you may be able to make do with pliars, but I wouldn't recommend it), to join your spade connectors to your jumper wire.
 

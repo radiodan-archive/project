@@ -1,11 +1,12 @@
 Radiodan is a piece of software that lets you build your own internet radio. 
 
 This site explains how to set it up on a Raspberry Pi with some BBC streams, but it is easy to use with other 
-streams, and MP3 files and other audio formats. It uses Ruby code on top of [MPD](http://www.musicpd.org).
+streams, and to add MP3 files (and other audio formats). It uses Ruby code on top of [MPD](http://www.musicpd.org).
 
 We've made it because we are interested in different kinds of physical radio devices and how we might change 
-their functionality to make them better. We think that you can only test this by building radio-like devices, and 
-the more people who can build them, the more interesting the radios will be.
+their functionality to make them better. We think that it's only possible to test what makes a radio better by 
+building devices that act like radios, and that the more people who can build them, the more interesting the 
+radios will be.
 
 
 Things you will need
@@ -14,12 +15,9 @@ Things you will need
 * An [SD card reader](https://www.google.co.uk/search?q=SD+card+reader) - computers commonly have them built in, or they can be bought very cheaply.
 * A computer suitable for putting data on the SD card - Windows, Linux or Mac OS X.
 * A wifi connection - it can be open or password protected (WPA or WEP), but our cold_start proceedure which links the Raspberry PI to a wifi network won't work if it's a captive portal where you have to go through a web page to get connected. It also won't work with proxies at the moment.
-* A [Raspberry Pi](http://www.raspberrypi.org)
-** The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio and video. It doesn't come with a keyboard, monitor, mouse or hard drive - it's powered from an SD card of the kind you get in cameras. You can buy Pis from [Farnell](http://export.farnell.com/rp/order/) or [RS](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
-* SD Card
-** Get a 4GB (or larger) class 10 card [like this one](http://www.dabs.com/products/sandisk-ultra-secure-16gb-sd-card---30mb-s---class-10---sdhc-uhs-i-89F3.html?refs=57120000&src=2). It's quite hard to find standard cards smaller than 16GB, so you could use a [micro SD card](http://www.dabs.com/products/kingston-microsd-4gb-class-10-memory-card---adaptor-not-included-7MBL.html) (but remember to buy [http://www.amazon.co.uk/MICRO-SD-TO-CARD-ADAPTOR/dp/B0019AJJRK](an adaptor, like this one))
-* Speaker
-** Anything with a standard jack will do. There are some very cheap tiny speakers available, [such as this one](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1).
+* A [Raspberry Pi](http://www.raspberrypi.org). The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio and video. It doesn't come with a keyboard, monitor, mouse or hard drive - it's powered from an SD card of the kind you get in cameras. You can buy Pis from [Farnell](http://export.farnell.com/rp/order/) or [RS](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
+* An SD Card - get a 4GB (or larger) class 10 card [like this one](http://www.dabs.com/products/sandisk-ultra-secure-16gb-sd-card---30mb-s---class-10---sdhc-uhs-i-89F3.html?refs=57120000&src=2). It's quite hard to find standard cards smaller than 16GB, so you could use a [micro SD card](http://www.dabs.com/products/kingston-microsd-4gb-class-10-memory-card---adaptor-not-included-7MBL.html) (but remember to buy [an adaptor, like this one](http://www.amazon.co.uk/MICRO-SD-TO-CARD-ADAPTOR/dp/B0019AJJRK)
+* A speaker. Anything with a standard jack will do. There are some very cheap tiny speakers available, [such as this one](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1).
 * A  USB Wifi card - it's important to get one with the *RT5370 chipset*, like [this](http://www.ebay.co.uk/itm/WIFI-150MBPS-WIRELESS-ADAPTOR-802-11-B-G-N-LAN-NETWORK-MINI-USB-DONGLE-ADAPTER-/321023374826?_trksid=p2054897.l4275) or [this](http://www.ebay.co.uk/itm/Mini-150Mbps-150M-USB-2-0-WiFi-Wireless-LAN-Network-Card-802-11-n-g-b-Adapter-/120912927894?_trksid=p2054897.l4276)
 * A [USB hub](https://www.google.co.uk/search?q=usb+hub), which doesn't have to be powered
 * A USB extender cable, approximately 2 metres long, for example [this one](http://www.amazon.co.uk/Plug-Socket-Extension-Cable-Speed/dp/B00077DJK4/ref=sr_1_1)
@@ -33,8 +31,8 @@ The approximate cost should be about £60.
 
 Optional
 
-* A [soundcard, like this one](http://www.amazon.co.uk/USB2-0-External-Quality-Channel-Adapter/dp/B003ZM0XIY/ref=sr_1_2), in which case you might need a [small USB extender](http://www.amazon.co.uk/Ex-Pro®-Professional-Cable-Female-Extension/dp/B007VDR0F2/ref=sr_1_1)
-* One button and [two rotary encoders](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [dials](http://www.coolcomponents.co.uk/clear-plastic-knob.html), [jumper wire](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html), [spade connectors](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) and [crimpers](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (see @@below). You can do without these but it's more fun if you have physical buttons and dials for your radio.
+* A [soundcard, like this one](http://www.amazon.co.uk/USB2-0-External-Quality-Channel-Adapter/dp/B003ZM0XIY/ref=sr_1_2), in which case you might need a [small USB extender](http://www.amazon.co.uk/Ex-Pro®-Professional-Cable-Female-Extension/dp/B007VDR0F2/ref=sr_1_1) - you'll need to [configure the sound card manually](https://gist.github.com/andrewn/6352695)
+* One [button](http://www.coolcomponents.co.uk/concave-arcade-button-red.html) and [two rotary encoders](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [dials](http://www.coolcomponents.co.uk/clear-plastic-knob.html), [jumper wire](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html), [spade connectors](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) and [crimpers](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (see [below](#buttons)). You can do without these but it's more fun if you have physical buttons and dials for your radio.
 * Keyboard, mouse, monitor. You don't need these to set it up, though if something goes wrong it might be helpful to have them.
 
 
@@ -46,7 +44,7 @@ Getting started
 This is a custom image that we have created from 
 
 * [Raspian Wheezy image](http://downloads.raspberrypi.org/raspbian_latest) (zip)
-* [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes [radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example)
+* [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes [radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example) (github links)
 
 ## 2. Put the image on the SD card using the SD card reader
 
@@ -71,8 +69,8 @@ Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uplo
 In about 1 - 2 minutes you should see the led light up and flash green@@. When this happens, on your main 
 computer, look for a new wifi network called 'radiodan-configuration'.
 
-Join this network, and you should see a web page pop up (like a 'captive portal' you get iwith some wifi networks). 
-Follow the instructions and select a wifi network to connect to and give it the password. Click 'reboot now', and 
+Join this network, and you should see a web page pop up (like a 'captive portal' you get with some wifi networks). 
+Follow the instructions and select a wifi network to connect to and type in the password. Click 'reboot now', and 
 rejoin your usual wifi network.
 
 ## 5. Listen to the radio
@@ -81,7 +79,7 @@ If all that has worked, 1 - 2 minutes after the reboot, you should hear Radio 1 
 
 ## 6. Control it using the webpage
 
-You can control your radio by adding buttons and dials (see below@@), but also by going to 
+You can control your radio by adding buttons and dials (see [below](#buttons)), but also by going to 
 
 http://raspberrypi.local:3000
 
@@ -107,6 +105,7 @@ install all their Ruby dependencies (using [bundler](http://bundler.io)) and the
 machine is booted.
 
 
+<a name="buttons"></a>
 Adding buttons and dials
 ========================
 
@@ -115,9 +114,9 @@ fun to wire up some physical buttons to make it more like a real radio.
 
 For this you will need:
 
-* Two [rotary encoders]((http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html)) with [knobs](http://www.coolcomponents.co.uk/clear-plastic-knob.html). Get ones with a screw-in part to fix them to the box.
+* Two [rotary encoders](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [knobs](http://www.coolcomponents.co.uk/clear-plastic-knob.html). Get ones with a screw-in part to fix them to the box.
 * A clicky button, for example [this one](http://www.coolcomponents.co.uk/concave-arcade-button-red.html), again, find one that you can screw to your box. The clickiness gives better feedback to the person clicking it that it's been pushed correctly.
 * Some jumper wire. Easiest is to get male to female, like [this](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html)
 * Spade connectors suitable for your buttons and also for your rotary encoders@@. For example [these](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) - check that they are the correct size for your button's connectors. These are just a way for you to connect your buttons to your Pi without soldering. You could also use crocodile clips.
-* A crimper, [like this one](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (you may be able to make do with pliars, but I wouldn't recommend it), to join your spade connectors to your jumper wire.
+* A crimper, [like this one](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (you may be able to make do with pliers, but I wouldn't recommend it), to join your spade connectors to your jumper wire.
 

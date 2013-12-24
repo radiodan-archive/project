@@ -69,7 +69,7 @@ Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uplo
 
 In about 1 - 2 minutes you should see a new wifi network called 'radiodan-configuration'.
 
-Join this network, and go to a web page (or if you are on a Mac you should see a web page pop up (like a 'captive portal' you get with some wifi networks)). 
+Join this network, and go to a web page (or if you are on a Mac you should see a web page pop up, like a 'captive portal' you get with some wifi networks). 
 Follow the instructions and select a wifi network to connect to and type in the password. Click 'reboot now', and 
 rejoin your usual wifi network.
 

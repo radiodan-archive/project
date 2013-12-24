@@ -24,7 +24,6 @@ Things you will need
 * A [USB to mini-USB cable](http://www.amazon.co.uk/female-Micro-male-Cable-Adapter/dp/B005GI2VMG/ref=sr_1_4)
 * A USB mains plug [like this one](http://www.amazon.co.uk/ADAPTER-CHARGER-BLACKBERRY-SAMSUNG-TOMTOM/dp/B00CLR00JQ/ref=sr_1_1)
 * A box to put it in, a cardboard one is good. We have made some [templates](box_design.markdown) for you to try, or you could use an old [teabag box](http://www.flickr.com/photos/nicecupoftea/9564907822/in/set-72157635210928095) or something similar.
-* An [RGB LED like this one](http://www.coolcomponents.co.uk/triple-output-led-rgb.html). Strictly speaking you could do without this, but it makes things much easier to have it.
 
 
 The approximate cost should be about £60.
@@ -32,19 +31,21 @@ The approximate cost should be about £60.
 Optional
 
 * A [soundcard, like this one](http://www.amazon.co.uk/USB2-0-External-Quality-Channel-Adapter/dp/B003ZM0XIY/ref=sr_1_2), in which case you might need a [small USB extender](http://www.amazon.co.uk/Ex-Pro®-Professional-Cable-Female-Extension/dp/B007VDR0F2/ref=sr_1_1) - you'll need to [configure the sound card manually](https://gist.github.com/andrewn/6352695)
-* One [button](http://www.coolcomponents.co.uk/concave-arcade-button-red.html) and [two rotary encoders](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [dials](http://www.coolcomponents.co.uk/clear-plastic-knob.html), [jumper wire](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html), [spade connectors](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) and [crimpers](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (see [below](#buttons)). You can do without these but it's more fun if you have physical buttons and dials for your radio.
+* Four [buttons](http://www.coolcomponents.co.uk/switch-mini-tactile-pcb.html) and [one rotary encoder](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [dials](http://www.coolcomponents.co.uk/clear-plastic-knob.html), [jumper wire](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html), [spade connectors](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) and [crimpers](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (see [below](#buttons)). You can do without these but it's more fun if you have physical buttons and dials for your radio.
 * Keyboard, mouse, monitor. You don't need these to set it up, though if something goes wrong it might be helpful to have them.
 
 
 Getting started
 ===============
 
-## 1. Download this @@SD Card image
+## 1. Download [this SD Card image](http://dev.notu.be/2013/12/radiodan/radiodan2.zip) (580MB zip)
 
 This is a custom image that we have created from 
 
-* [Raspian Wheezy image](http://downloads.raspberrypi.org/raspbian_latest) (zip)
-* [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes [radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example) (github links)
+* [Raspian Wheezy image, 2013-09-10](http://downloads.raspberrypi.org/raspbian/images/raspbian-2013-09-16/2013-09-10-wheezy-raspbian.zip) (zip)
+* [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes [radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example) and [radiodan_example](https://github.com/radiodan/radiodan_example_physical_interface) (github links)
+
+We chose the slightly older 2013-09-10 Raspian image because we wanted to keep it small, and we make a lot of updates to it anyway.
 
 ## 2. Put the image on the SD card using the SD card reader
 
@@ -62,14 +63,13 @@ Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uplo
 
 ## 3. Eject the disk from your SD card reader and assemble the components, like this:
 
-finish me @@include an led@@
- 
+<img src="assets/pi_components.jpg" alt= "cables layout" width="600"/>
+
 ## 4. Turn the Pi on and attach it to the wifi
 
-In about 1 - 2 minutes you should see the led light up and flash green@@. When this happens, on your main 
-computer, look for a new wifi network called 'radiodan-configuration'.
+In about 1 - 2 minutes you should see a new wifi network called 'radiodan-configuration'.
 
-Join this network, and you should see a web page pop up (like a 'captive portal' you get with some wifi networks). 
+Join this network, and go to a web page (or if you are on a Mac you should see a web page pop up (like a 'captive portal' you get with some wifi networks)). 
 Follow the instructions and select a wifi network to connect to and type in the password. Click 'reboot now', and 
 rejoin your usual wifi network.
 
@@ -93,16 +93,16 @@ The image we have created uses cold_start to remove some of the packages that co
 the image as small as possible. This includes all of the Desktop packages, so that if you want to programme it later 
 you'll have to use the command line.
 
-It also sets up two programmes to run on startup
+It also sets up three programmes to run on startup
 * cold_start wifi setup
-* radiodan_example app runner
+* app runner
 
 The wifi setup scans the environment for networks and then makes itself a wifi access point. This means that you 
 can connect to it using another computer and set it up in a web page, as described above.
 
 The app runner looks for Ruby applications in the /home/pi/apps/ folder and if they have a [Procfile](http://ddollar.github.io/foreman/), attempts to 
 install all their Ruby dependencies (using [bundler](http://bundler.io)) and then uses [Upstart](http://upstart.ubuntu.com) to ensure that they start when the 
-machine is booted.
+machine is booted. Two are included - [radiodan_example](https://github.com/radiodan/radiodan_example) and [radiodan_example_physical_interface](https://github.com/radiodan/radiodan_example_physical_interface)
 
 
 <a name="buttons"></a>
@@ -114,9 +114,13 @@ fun to wire up some physical buttons to make it more like a real radio.
 
 For this you will need:
 
-* Two [rotary encoders](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [knobs](http://www.coolcomponents.co.uk/clear-plastic-knob.html). Get ones with a screw-in part to fix them to the box.
-* A clicky button, for example [this one](http://www.coolcomponents.co.uk/concave-arcade-button-red.html), again, find one that you can screw to your box. The clickiness gives better feedback to the person clicking it that it's been pushed correctly.
+* One [rotary encoder](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with a [knob](http://www.coolcomponents.co.uk/clear-plastic-knob.html). Get ones with a screw-in part to fix them to the box.
+* Some clicky buttons, for example [these](http://www.coolcomponents.co.uk/switch-mini-tactile-pcb.html), again, it's best if you can find one that you can screw to your box. The clickiness gives better feedback to the person clicking it that it's been pushed correctly.
 * Some jumper wire. Easiest is to get male to female, like [this](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html)
-* Spade connectors suitable for your buttons and also for your rotary encoders@@. For example [these](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) - check that they are the correct size for your button's connectors. These are just a way for you to connect your buttons to your Pi without soldering. You could also use crocodile clips.
+* Spade connectors suitable for your buttons and also for your rotary encoders. For example [these](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) - check that they are the correct size for your button's connectors. These are just a way for you to connect your buttons to your Pi without soldering. You could also use crocodile clips.
 * A crimper, [like this one](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (you may be able to make do with pliers, but I wouldn't recommend it), to join your spade connectors to your jumper wire.
 
+Assemble everything according to this diagram:
+
+<a href="assets/Radiodan_app.fzz"><img src="assets/Radiodan_app.png" alt="Fritzing diagram"/></a>
+ 

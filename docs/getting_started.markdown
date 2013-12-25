@@ -69,29 +69,29 @@ First, download [this Radiodan-only NOOBS zipfile](http://dev.notu.be/2013/12/ra
 
 Unzip it and follow the instructions in the README, namely:
 
-1. Insert an SD card that is 4GB or greater in size into your computer.
-2. Format the SD card using the platform-specific instructions below:
-   a. Windows
-      i. Download the SD Association's Formatting Tool from https://www.sdcard.org/downloads/formatter_4/eula_windows/
-      ii. Install and run the Formatting Tool on your machine
-      iii. Set "FORMAT SIZE ADJUSTMENT" option to "ON" in the "Options" menu
-      iv. Check that the SD card you inserted matches the one selected by the Tool
-      v. Click the "Format" button
-   b. Mac
-      i. Download the SD Association's Formatting Tool from https://www.sdcard.org/downloads/formatter_4/eula_mac/
-         - I've tried the Mac's Disk Utility one and it didn't work
-      ii. Install and run the Formatting Tool on your machine
-      iii. Select "Overwrite Format"
-      iv. Check that the SD card you inserted matches the one selected by the Tool
-      v. Click the "Format" button
-   c. Linux
-      i. We recommend using gparted (or the command line version parted)
-      ii. Format the entire disk as FAT
-3. Extract the files contained in this NOOBS zip file.
-4. Copy the extracted files onto the SD card that you just formatted so that this file is at the root directory of the SD card. Please note that in some cases it may extract the files into a folder, if this is the case then please copy across the files from inside the folder rather than the folder itself.
-5. Insert the SD card into your Pi and connect the power supply.
+    1. Insert an SD card that is 4GB or greater in size into your computer.
+    2. Format the SD card using the platform-specific instructions below:
+      a. Windows
+         i. Download the SD Association's Formatting Tool from https://www.sdcard.org/downloads/formatter_4/eula_windows/
+         ii. Install and run the Formatting Tool on your machine
+         iii. Set "FORMAT SIZE ADJUSTMENT" option to "ON" in the "Options" menu
+         iv. Check that the SD card you inserted matches the one selected by the Tool
+         v. Click the "Format" button
+      b. Mac
+         i. Download the SD Association's Formatting Tool from https://www.sdcard.org/downloads/formatter_4/eula_mac/
+           - I've tried the Mac's Disk Utility one and it didn't work
+         ii. Install and run the Formatting Tool on your machine
+         iii. Select "Overwrite Format"
+         iv. Check that the SD card you inserted matches the one selected by the Tool
+         v. Click the "Format" button
+      c. Linux
+         i. We recommend using gparted (or the command line version parted)
+         ii. Format the entire disk as FAT
+    3. Extract the files contained in this NOOBS zip file.
+    4. Copy the extracted files onto the SD card that you just formatted so that this file is at the root directory of the SD card. Please note that in some cases it may extract the files into a folder, if this is the case then please copy across the files from inside the folder rather than the folder itself.
+    5. Insert the SD card into your Pi and connect the power supply.
 
-Your Pi will now boot into NOOBS and will automatically install the Radiodan base system. You won't need to plug it into a display since it will install silently. When the Radiodan software has finished installing, the Pi will reboot itself and boot into the Radiodan software.
+    Your Pi will now boot into NOOBS and will automatically install the Radiodan base system. You won't need to plug it into a display since it will install silently. When the Radiodan software has finished installing, the Pi will reboot itself and boot into the Radiodan software.
 
 ## 3. Eject the disk from your SD card reader and assemble the components, like this:
 

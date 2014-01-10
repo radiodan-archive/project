@@ -14,7 +14,7 @@ Things you will need
 
 * An [SD card reader](https://www.google.co.uk/search?q=SD+card+reader) - computers sometimes have them built in, or they can be bought very cheaply.
 * A computer suitable for putting data on the SD card - Windows, Linux or Mac OS X.
-* A wifi connection - it can be open or password protected (WPA or WEP), but our cold_start proceedure which links the Raspberry PI to a wifi network won't work if it's a captive portal where you have to go through a web page to get connected. It also won't work with proxies at the moment.
+* A wifi connection - it can be open or password protected (WPA or WEP), but our wifi configuration tool which links the Raspberry PI to a wifi network won't work if it's a captive portal where you have to go through a web page to get connected. It also won't work with proxies at the moment.c
 * A [Raspberry Pi](http://www.raspberrypi.org). The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio and video. It doesn't come with a keyboard, monitor, mouse or hard drive - it's powered from an SD card of the kind you get in cameras. You can buy Pis from [Farnell](http://export.farnell.com/rp/order/) or [RS](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
 * An SD Card - get a 4GB (or larger) class 10 card [like this one](http://www.dabs.com/products/sandisk-ultra-secure-16gb-sd-card---30mb-s---class-10---sdhc-uhs-i-89F3.html?refs=57120000&src=2). It's quite hard to find standard cards smaller than 16GB, so you could use a [micro SD card](http://www.dabs.com/products/kingston-microsd-4gb-class-10-memory-card---adaptor-not-included-7MBL.html) (but remember to buy [an adaptor, like this one](http://www.amazon.co.uk/MICRO-SD-TO-CARD-ADAPTOR/dp/B0019AJJRK))
 * A speaker. Anything with a standard jack will do. There are some very cheap tiny speakers available, [such as this one](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1).
@@ -121,15 +121,15 @@ in a web browser when you are on the same wifi network as your radiodan.
 What's happening under the hood
 ===============================
 
-The image we have created uses cold_start to remove some of the packages that come with Raspbian, in order to make 
+The image we have created uses the cold_start project to remove some of the packages that come with Raspbian, in order to make 
 the image as small as possible. This includes all of the Desktop packages, so that if you want to programme it later 
 you'll have to use the command line.
 
 It also sets up three programmes to run on startup
-* cold_start wifi setup
+* wifi-configuration web interface and setup
 * app runner
 
-The wifi setup scans the environment for networks and then makes itself a wifi access point. This means that you 
+The wifi configuration scans the environment for networks and then makes itself a wifi access point. This means that you 
 can connect to it using another computer and set it up in a web page, as described above.
 
 The app runner looks for Ruby applications in the /home/pi/apps/ folder and if they have a [Procfile](http://ddollar.github.io/foreman/), attempts to 

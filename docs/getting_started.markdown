@@ -15,105 +15,69 @@ Things you will need
 * An [SD card reader](https://www.google.co.uk/search?q=SD+card+reader) - computers sometimes have them built in, or they can be bought very cheaply.
 * A computer suitable for putting data on the SD card - Windows, Linux or Mac OS X.
 * A wifi connection - it can be open or password protected (WPA or WEP), but our wifi configuration tool which links the Raspberry PI to a wifi network won't work if it's a captive portal where you have to go through a web page to get connected. It also won't work with proxies at the moment.c
+
 * A [Raspberry Pi](http://www.raspberrypi.org). The Raspberry Pi is a small, cheap computer with an ethernet port, two USB ports, audio and video. It doesn't come with a keyboard, monitor, mouse or hard drive - it's powered from an SD card of the kind you get in cameras. You can buy Pis from [Farnell](http://export.farnell.com/rp/order/) or [RS](http://uk.rs-online.com/web/generalDisplay.html?id=raspberrypi)
 * An SD Card - get a 4GB (or larger) class 10 card [like this one](http://www.dabs.com/products/sandisk-ultra-secure-16gb-sd-card---30mb-s---class-10---sdhc-uhs-i-89F3.html?refs=57120000&src=2). It's quite hard to find standard cards smaller than 16GB, so you could use a [micro SD card](http://www.dabs.com/products/kingston-microsd-4gb-class-10-memory-card---adaptor-not-included-7MBL.html) (but remember to buy [an adaptor, like this one](http://www.amazon.co.uk/MICRO-SD-TO-CARD-ADAPTOR/dp/B0019AJJRK))
 * A speaker. Anything with a standard jack will do. There are some very cheap tiny speakers available, [such as this one](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1).
 * A  USB Wifi card - it's important to get one with the *RT5370 chipset*, like [this](http://www.ebay.co.uk/itm/WIFI-150MBPS-WIRELESS-ADAPTOR-802-11-B-G-N-LAN-NETWORK-MINI-USB-DONGLE-ADAPTER-/321023374826?_trksid=p2054897.l4275) or [this](http://www.ebay.co.uk/itm/Mini-150Mbps-150M-USB-2-0-WiFi-Wireless-LAN-Network-Card-802-11-n-g-b-Adapter-/120912927894?_trksid=p2054897.l4276)
-* A [USB hub](https://www.google.co.uk/search?q=usb+hub), which doesn't have to be powered
-* A USB extender cable, approximately 2 metres long, for example [this one](http://www.amazon.co.uk/Plug-Socket-Extension-Cable-Speed/dp/B00077DJK4/ref=sr_1_1)
+
 * A [USB to mini-USB cable](http://www.amazon.co.uk/female-Micro-male-Cable-Adapter/dp/B005GI2VMG/ref=sr_1_4)
 * A USB mains plug [like this one](http://www.amazon.co.uk/ADAPTER-CHARGER-BLACKBERRY-SAMSUNG-TOMTOM/dp/B00CLR00JQ/ref=sr_1_1)
-* A box to put it in, a cardboard one is good. We have made some [templates](box_design.markdown) for you to try, or you could use an old [teabag box](http://www.flickr.com/photos/nicecupoftea/9564907822/in/set-72157635210928095) or something similar.
 
+* A box to put it in, a cardboard one is good. We have made some [templates](box_design.markdown) for you to try, or you could use an old [teabag box](http://www.flickr.com/photos/nicecupoftea/9564907822/in/set-72157635210928095) or something similar.
 
 The approximate cost should be about £60.
 
 Optional
 
 * A [soundcard, like this one](http://www.amazon.co.uk/USB2-0-External-Quality-Channel-Adapter/dp/B003ZM0XIY/ref=sr_1_2), in which case you might need a [small USB extender](http://www.amazon.co.uk/Ex-Pro®-Professional-Cable-Female-Extension/dp/B007VDR0F2/ref=sr_1_1) - you'll need to [configure the sound card manually](https://gist.github.com/andrewn/6352695)
-* Four [buttons](http://www.coolcomponents.co.uk/switch-mini-tactile-pcb.html) and [one rotary encoder](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [dials](http://www.coolcomponents.co.uk/clear-plastic-knob.html), [jumper wire](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html), [spade connectors](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) and [crimpers](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (see [below](#buttons)). You can do without these but it's more fun if you have physical buttons and dials for your radio.
+* One [buttons](http://www.coolcomponents.co.uk/switch-mini-tactile-pcb.html) and [two rotary encoders](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with [dials](http://www.coolcomponents.co.uk/clear-plastic-knob.html), [jumper wire](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html), [spade connectors](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) and [crimpers](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (see [below](#buttons)). You can do without these but it's more fun if you have physical buttons and dials for your radio. A simpler alternative is just two buttons.
 * Keyboard, mouse, monitor. You don't need these to set it up, though if something goes wrong it might be helpful to have them.
 
 
 Getting started
 ===============
 
-## 1. Download [this SD Card image](http://dev.notu.be/2013/12/radiodan/radiodan2.zip) (580MB zip)
+## 1. Download [this Raspberry PI NOOBS image](http://dev.notu.be/2014/05/radiodan/) (822M zip)
 
-This is a custom image that we have created from 
-
-* [Raspian Wheezy image, 2013-09-10](http://downloads.raspberrypi.org/raspbian/images/raspbian-2013-09-16/2013-09-10-wheezy-raspbian.zip) (zip)
-* [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes [radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example) and [radiodan_example](https://github.com/radiodan/radiodan_example_physical_interface) (github links)
-
-We chose the slightly older 2013-09-10 Raspian image because we wanted to keep it small, and we make a lot of updates to it anyway.
+This is a custom image that we have created using the [NOOBS technique](http://www.raspberrypi.org/introducing-noobs/) which is mostly 
+Raspian Wheezy with [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes 
+[radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example) and 
+[radiodan_example](https://github.com/radiodan/radiodan_example_physical_interface) (github links)
 
 ## 2. Put the image on the SD card using the SD card reader
 
-Raspberry Pi have [instructions here](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf) (pdf). If you are comfortable using dd on linux or Mac OS X you can just do:
-
-    # list the disks
-    diskutil list
-    # insert SD card
-    diskutil list
-    # identify your SD card as the new one
-    # where 'n' is a number
-    diskutil unmountDisk /dev/diskn
-    # Downloads/ is wherever it downloaded to
-    dd bs=1m of=/dev/disk2 if=~/Downloads/radiodn_0.1.img
-
-## 1a. / 2a. Try the Radiodan-only NOOBS installation
-
-This is experimental, but much quicker and easier. [NOOBS](http://www.raspberrypi.org/archives/4100) is a much quicker and easier way of getting an operating system on an SD card.
-
-First, download [this Radiodan-only NOOBS zipfile](http://dev.notu.be/2013/12/radiodan/NOOBS_v1_3_2-radiodan-only.zip) (580MB zip)
-
-Unzip it and follow the instructions in the README, namely:
-
-    1. Insert an SD card that is 4GB or greater in size into your computer.
-    2. Format the SD card using the platform-specific instructions below:
-      a. Windows
-         i. Download the SD Association's Formatting Tool from https://www.sdcard.org/downloads/formatter_4/eula_windows/
-         ii. Install and run the Formatting Tool on your machine
-         iii. Set "FORMAT SIZE ADJUSTMENT" option to "ON" in the "Options" menu
-         iv. Check that the SD card you inserted matches the one selected by the Tool
-         v. Click the "Format" button
-      b. Mac
-         i. Download the SD Association's Formatting Tool from https://www.sdcard.org/downloads/formatter_4/eula_mac/
-           - I've tried the Mac's Disk Utility one and it didn't work
-         ii. Install and run the Formatting Tool on your machine
-         iii. Select "Overwrite Format"
-         iv. Check that the SD card you inserted matches the one selected by the Tool
-         v. Click the "Format" button
-      c. Linux
-         i. We recommend using gparted (or the command line version parted)
-         ii. Format the entire disk as FAT
-    3. Extract the files contained in this NOOBS zip file.
-    4. Copy the extracted files onto the SD card that you just formatted so that this file is at the root directory of the SD card. Please note that in some cases it may extract the files into a folder, if this is the case then please copy across the files from inside the folder rather than the folder itself.
-    5. Insert the SD card into your Pi and connect the power supply.
-
-    Your Pi will now boot into NOOBS and will automatically install the Radiodan base system. You won't need to plug it into a display since it will install silently. When the Radiodan software has finished installing, the Pi will reboot itself and boot into the Radiodan software.
+Unzip the NOOBs file and drag and drop the contents onto a newly formatted card - specific instructions for your platform are in the README.
 
 ## 3. Eject the disk from your SD card reader and assemble the components, like this:
 
 <img src="assets/pi_components.jpg" alt= "cables layout" width="600"/>
 
-## 4. Turn the Pi on and attach it to the wifi
+## 4. Plug the Pi in
 
-In about 1 - 2 minutes you should see a new wifi network called 'radiodan-configuration'.
+And wait.
+
+NOOBs really simplifies the process, but it does take a while to work, usually around an hour. If you plug your Pi into a monitor you can see 
+the progress, otherwise the green led on the pi will be on and intermittently flashing if it's working. If that doesn't happen, check that 
+the SD card is seated correctly. I have had trouble with some SD cards just not running NOOBs at all.
+
+## 5. Set up the Pi on the wif
+
+When NOOBS is installed,  you should see a new wifi network called 'radiodan-configuration'.
 
 Join this network, and go to a web page (or if you are on a Mac you should see a web page pop up, like a 'captive portal' you get with some wifi networks). 
 Follow the instructions and select a wifi network to connect to and type in the password. Click 'reboot now', and 
 rejoin your usual wifi network.
 
-## 5. Listen to the radio
+## 6. Listen to the radio
 
 If all that has worked, 1 - 2 minutes after the reboot, you should hear Radio 1 playing.
 
-## 6. Control it using the webpage
+## 7. Control it using the webpage
 
 You can control your radio by adding buttons and dials (see [below](#buttons)), but also by going to 
 
-http://raspberrypi.local:3000
+http://raspberrypi.local
 
 in a web browser when you are on the same wifi network as your radiodan.
 
@@ -146,8 +110,8 @@ fun to wire up some physical buttons to make it more like a real radio.
 
 For this you will need:
 
-* One [rotary encoder](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with a [knob](http://www.coolcomponents.co.uk/clear-plastic-knob.html). Get ones with a screw-in part to fix them to the box.
-* Some clicky buttons, for example [these](http://www.coolcomponents.co.uk/switch-mini-tactile-pcb.html), again, it's best if you can find one that you can screw to your box. The clickiness gives better feedback to the person clicking it that it's been pushed correctly.
+* Two [rotary encoders](http://www.coolcomponents.co.uk/rotary-encoder-illuminated-rgb.html) with a [knob](http://www.coolcomponents.co.uk/clear-plastic-knob.html). Get ones with a screw-in part to fix them to the box.
+* A clicky button, for example [these](http://www.coolcomponents.co.uk/switch-mini-tactile-pcb.html), again, it's best if you can find one that you can screw to your box. The clickiness gives better feedback to the person clicking it that it's been pushed correctly.
 * Some jumper wire. Easiest is to get male to female, like [this](http://www.tandyonline.co.uk/male-to-female-jumper-wires-10pk.html)
 * Spade connectors suitable for your buttons and also for your rotary encoders. For example [these](http://www.maplin.co.uk/miniature-female-spade-connector10-pack-34145) - check that they are the correct size for your button's connectors. These are just a way for you to connect your buttons to your Pi without soldering. You could also use crocodile clips.
 * A crimper, [like this one](http://www.rapidonline.com/Cables-Connectors/Crimp-Tool-Kit-Re-85-0270/?sid=e5a5a13e-681b-4dd6-a9ba-b0179034f95c) (you may be able to make do with pliers, but I wouldn't recommend it), to join your spade connectors to your jumper wire.
@@ -155,4 +119,5 @@ For this you will need:
 Assemble everything according to this diagram:
 
 <a href="assets/Radiodan_app.fzz"><img src="assets/Radiodan_app.png" alt="Fritzing diagram"/></a>
- 
+
+This is quite complicated, because the rotary encoders use so many pins. We're working on a simple two-button version.

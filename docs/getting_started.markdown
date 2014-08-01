@@ -8,6 +8,7 @@ their functionality to make them better. We think that it's only possible to tes
 building devices that act like radios, and that the more people who can build them, the more interesting the 
 radios will be.
 
+There are also [case construction instructions](case_contruction.md).
 
 Things you will need
 ====================
@@ -20,10 +21,7 @@ Things you will need
 * An SD Card - get a 4GB (or larger) class 10 card [like this one](http://www.dabs.com/products/sandisk-ultra-secure-16gb-sd-card---30mb-s---class-10---sdhc-uhs-i-89F3.html?refs=57120000&src=2). It's quite hard to find standard cards smaller than 16GB, so you could use a [micro SD card](http://www.dabs.com/products/kingston-microsd-4gb-class-10-memory-card---adaptor-not-included-7MBL.html) (but remember to buy [an adaptor, like this one](http://www.amazon.co.uk/MICRO-SD-TO-CARD-ADAPTOR/dp/B0019AJJRK))
 * A speaker. Anything with a standard jack will do. There are some very cheap tiny speakers available, [such as this one](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1).
 * A  USB Wifi card - it's important to get one with the *RT5370 chipset*, like [this](http://www.ebay.co.uk/itm/WIFI-150MBPS-WIRELESS-ADAPTOR-802-11-B-G-N-LAN-NETWORK-MINI-USB-DONGLE-ADAPTER-/321023374826?_trksid=p2054897.l4275) or [this](http://www.ebay.co.uk/itm/Mini-150Mbps-150M-USB-2-0-WiFi-Wireless-LAN-Network-Card-802-11-n-g-b-Adapter-/120912927894?_trksid=p2054897.l4276)
-
-* A [USB to mini-USB cable](http://www.amazon.co.uk/female-Micro-male-Cable-Adapter/dp/B005GI2VMG/ref=sr_1_4)
-* A USB mains plug [like this one](http://www.amazon.co.uk/ADAPTER-CHARGER-BLACKBERRY-SAMSUNG-TOMTOM/dp/B00CLR00JQ/ref=sr_1_1)
-
+* a mini-USB mains plug power supply for the Pi
 * A box to put it in, a cardboard one is good. We have made some [templates](box_design.markdown) for you to try, or you could use an old [teabag box](http://www.flickr.com/photos/nicecupoftea/9564907822/in/set-72157635210928095) or something similar.
 
 The approximate cost should be about £60.

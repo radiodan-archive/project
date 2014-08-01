@@ -3,14 +3,17 @@ Basic instructions for building a Radiodan
 
 This is a first pass at a set set of instructions. We're still testing it. So far it looks like we need to move step 11 to after step 7.
 
-In general: the case is designed (by Victor Johannsen) to be something that can be changed and adapted to the size of different components. 
-Here we use a USB amp and a 5cm diameter speaker but we've made versions with miniature speakers instead, though you may need to increase he 
-number of corner pieces and make the side pieces wider. It's also designed to be laser cut in 3mm acrylic or MDF, but we have made versions 
-successfully in cardboard, although the button press movements mean that the top piece and supporting side bar need to be quite stiff. You 
-can event cut the pieces out yourself with a craft knife, though we're working on a simpler, squarer version for that.
+In general: the case is designed (by [Victor Johannsen](https://twitter.com/victordons)) to be something that can be changed and adapted to the size of different components. 
 
-We have struggled with finding an effective and simple way to connect the rotary encoders to the Pi's GPIO, because the encoders connectors 
-are versy close to gether and they use up most of the ports on the GPIO. We are working on a simpler version with two buttons.
+Here we use a USB amp and a 5cm diameter speaker, but we've also experimented with versions with [cheap miniature speakers](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1) instead, though in that case you may need to increase he 
+number of corner pieces and make the side pieces wider (and the sound won't be as good). 
+
+It's also designed to be laser cut in 3mm acrylic or MDF, but we have made versions successfully in cardboard, although the button press 
+movements mean that the top piece and supporting side bar need to be quite stiff. You can event cut the pieces out yourself with a craft 
+knife, though we're working on a simpler, squarer version for that.
+
+We have struggled with finding an effective and simple way to connect the rotary encoders to the Pi's GPIO, because the encoders' connectors 
+are very close to gether and they use up most of the ports on the GPIO. We are working on a simpler version with two buttons.
 
 For getting the software working, see [getting started](getting_started.markdown)
 

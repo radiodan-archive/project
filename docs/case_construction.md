@@ -43,7 +43,7 @@ The complete list is this:
 Step 1: Add the four bolts and the two internal mounts
 ======================================================
 
-Play particular attention to the placement of the arrows.
+Play particular attention to the placement of the arrows - they should point to the circular hole.
 
 <img src="assets/kit/step1.png" alt="four bolts and the two internal mounts" width="600px"/>
 

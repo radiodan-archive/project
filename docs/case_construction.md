@@ -1,7 +1,7 @@
 Basic instructions for building a Radiodan
 ==========================================
 
-This is a first pass at a set set of instructions. We're still testing it. So far it looks like we need to move step 11 to after step 7.
+This is a first pass at a set set of instructions. We're still testing it.
 
 In general: the case is designed (by [Victor Johannsen](https://twitter.com/victordons)) to be something that can be changed and adapted to the size of different components. 
 

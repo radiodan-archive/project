@@ -53,8 +53,8 @@ Step 2: Add the four edge pieces
 
 Make sure the top piece is the right way up and the correct way round (text faces outwards).
 
-<img src="assets/kit/step2.png" alt="four edge pieces" width="600px"/>
 <img src="assets/kit/step2a.png" alt="four edge pieces" width="600px"/>
+<img src="assets/kit/step2.png" alt="four edge pieces" width="600px"/>
 
 
 Step 3: Add the corner pieces
@@ -65,16 +65,16 @@ There are 8 on each corner.
 <img src="assets/kit/step3.png" alt="corner pieces" width="600px"/>
 
 
-Step 4: Glue the screws to the internal mount
-=============================================
+Step 4: Glue the nuts to the internal mount
+===========================================
 
-Glue the screws into the mount first. The mount fits both the model B and the new B+, but you need to glue the screws into different holes 
+Glue the nuts into the mount first. The mount fits both the model B and the new B+, but you need to glue the nuts into different holes 
 depending on your model. The B+ holes are identified with a plus sign. It's easier to apply the glue to the holes, situate the screws in rough position on a flat surface and then manouver the internal mount piece over the top.
 
 
-<img src="assets/kit/step4a.png" alt="" width="600px"/>
-<img src="assets/kit/step4b.png" alt="" width="600px"/>
-<img src="assets/kit/step4c.png" alt="" width="600px"/>
+<img src="assets/kit/step4a.png" alt="the nuts next to the box" width="600px"/>
+<img src="assets/kit/step4b.png" alt="the nuts close up" width="600px"/>
+<img src="assets/kit/step4c.png" alt="the nuts glued to the internal mount" width="600px"/>
 
 
 Step 5: Add the internal mount
@@ -119,7 +119,6 @@ Step 9: Screw the Pi to the internal mount
 Screw the Pi into the holes with the small screws, using the rubber washers.
 
 <img src="assets/kit/step9a.png" alt="screw the pi to the internal mount" width="600px"/>
-<img src="assets/kit/step9b.png" alt="screw the pi to the internal mount" width="600px"/>
 
 
 Step 10: Add the speaker mount

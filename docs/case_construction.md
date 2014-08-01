@@ -13,7 +13,7 @@ movements mean that the top piece and supporting side bar need to be quite stiff
 knife, though we're working on a simpler, squarer version for that.
 
 We have struggled with finding an effective and simple way to connect the rotary encoders to the Pi's GPIO, because the encoders' connectors 
-are very close to gether and they use up most of the ports on the GPIO. We are working on a simpler version with two buttons.
+are very close to gether and they use up most of the ports on the GPIO. We are working on a simpler alternative version with two buttons.
 
 For getting the software working, see [getting started](getting_started.markdown)
 

@@ -9,7 +9,7 @@ Here we use a USB amp and a 5cm diameter speaker, but we've also experimented wi
 number of corner pieces and make the side pieces wider (and the sound won't be as good). 
 
 It's also designed to be laser cut in 3mm acrylic or MDF, but we have made versions successfully in cardboard, although the button press 
-movements mean that the top piece and supporting side bar need to be quite stiff. You can event cut the pieces out yourself with a craft 
+movements mean that the top piece and supporting side bar need to be quite stiff. You could even cut the pieces out yourself with a craft 
 knife, though we're working on a simpler, squarer version for that.
 
 We have struggled with finding an effective and simple way to connect the rotary encoders to the Pi's GPIO, because the encoders' connectors 

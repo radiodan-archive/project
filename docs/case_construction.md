@@ -37,7 +37,7 @@ The complete list is this:
  * a Raspberry Pi, any model
  * a power supply for the Pi
  * 4 3mm diameter bolts, 4cm or more in length, and 4 wingnuts or similar
- * 4 5mm diameter nuts to fit short 2mm diameter screws to hold in the Pi
+ * 2 5mm diameter nuts to fit 2 short 2mm diameter screws to hold in the Pi
 
 
 Step 1: Add the four bolts and the two internal mounts

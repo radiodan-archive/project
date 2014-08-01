@@ -5,7 +5,7 @@ This is a first pass at a set set of instructions. We're still testing it.
 
 In general: the [case](assets/radiodan_3mm_laser_template.pdf) is designed (by [Victor Johannsen](https://twitter.com/victordons)) to be something that can be changed and adapted to the size of different components. 
 
-Here we use a USB amp and a 5cm diameter speaker, but we've also experimented with versions with [cheap miniature speakers](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1) instead, though in that case you may need to increase he 
+Here we use a USB amp and a 5cm diameter speaker, but we've also experimented with versions with [cheap miniature speakers](http://www.amazon.co.uk/Veho-Rechargeable-Speaker-iPods-Players/dp/B002CS2T4I/ref=sr_1_1) instead, though in that case you may need to increase the 
 number of corner pieces and make the side pieces wider (and the sound won't be as good). 
 
 It's also designed to be laser cut in 3mm acrylic or MDF, but we have made versions successfully in cardboard, although the button press 

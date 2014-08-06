@@ -79,7 +79,11 @@ Step 5: Wire up the buttons and led and attach them to the top
 
 Make sure the top piece is the right way up and the correct way round (text faces outwards and the power button is on the left as you face it).
 
-For the wiring you need to consult this [fritzing diagram](assets/Radiodan_app.fzz)@@fixme.
+For the wiring you need to consult this [fritzing diagram](assets/Radiodan_app_simple.fzz).
+
+The RGB LED has a 10k resistor attached to its negative leg.
+
+Fit the top piece into the box.
 
 <img src="assets/kit/step5a.png" alt="attach the buttons and led" width="600px"/>
 <img src="assets/kit/step5b.png" alt="attach the wires to the buttons and led" width="600px"/>
@@ -135,7 +139,7 @@ It fits tightly into the gap between the internal mount and the side pieces, and
 Step 11: Add the USB Amp
 ========================
 
-Connect the amp to the top USB port.
+Connect the amp to the top USB port, fitting loops of wire in where you can.
 
 <img src="assets/kit/step11.png" alt="add the USB amp" width="600px"/>
 
@@ -143,6 +147,7 @@ Connect the amp to the top USB port.
 Step 12: Connect the AMP to the 3.5mm audio connector
 =====================================================
 
+Again fit the loops of wire in ehere you can.
 
 <img src="assets/kit/step12.png" alt="add the 3.5mm jack" width="600px"/>
 

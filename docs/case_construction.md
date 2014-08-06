@@ -61,7 +61,6 @@ depending on your model. The B+ holes are identified with a plus sign. It's easi
 <img src="assets/kit/step3.png" alt="the nuts glued to the internal mount" width="600px"/>
 
 
-
 Step 4: Add three of the edge pieces, the corner pieces, and the internal mount
 ===============================================================================
 
@@ -103,6 +102,8 @@ Step 7: Put the Pi in the box
 =============================
 
 Secure it with the screws and the rubber washers.
+
+If you have a model B+, the USB ports will be on the other side.
 
 <img src="assets/kit/step7.png" alt="put the Pi in the box" width="600px"/>
 
@@ -147,7 +148,7 @@ Connect the amp to the top USB port, fitting loops of wire in where you can.
 Step 12: Connect the AMP to the 3.5mm audio connector
 =====================================================
 
-Again fit the loops of wire in ehere you can.
+Again fit the loops of wire in where you can.
 
 <img src="assets/kit/step12.png" alt="add the 3.5mm jack" width="600px"/>
 

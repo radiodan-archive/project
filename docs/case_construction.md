@@ -77,7 +77,7 @@ The three edge pieces just slot in.
 Step 5: Wire up the buttons and leds and attach them to the top
 ===============================================================
 
-Make sure the top piece is the right way up and the correct way round (text faces outwards and the power button is on the right as you face it).
+Make sure the top piece is the right way up and the correct way round (text faces outwards and the power button is on the left as you face it).
 
 For the wiring you need to consult this [fritzing diagram](assets/Radiodan_app.fzz)@@fixme.
 

@@ -74,8 +74,8 @@ The three edge pieces just slot in.
 <img src="assets/kit/step4.png" alt="three edge pieces and corners and mount" width="600px"/>
 
 
-Step 5: Wire up the buttons and leds and attach them to the top
-===============================================================
+Step 5: Wire up the buttons and led and attach them to the top
+==============================================================
 
 Make sure the top piece is the right way up and the correct way round (text faces outwards and the power button is on the left as you face it).
 

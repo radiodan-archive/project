@@ -1,7 +1,7 @@
 Basic instructions for building a Radiodan
 ==========================================
 
-This is a first pass at a set set of instructions. We're still testing it.
+This is our second pass at a set of instructions. We're still testing it.
 
 In general: the [case](assets/radiodan_3mm_laser_template.pdf) is designed (by [Victor Johannsen](https://twitter.com/victordons)) to be something that can be changed and adapted to the size of different components. 
 

@@ -22,12 +22,12 @@ The version below is a simpler version with two buttons (on / off and a configur
 For getting the software working, see [getting started](getting_started.markdown)
 
 
-Step 0: Kit of parts
+Step 1: Kit of parts
 ====================
 
 Here's what you need. 
 
-<img src="assets/kit/step0.png" alt="Kit of parts" width="600px"/>
+<img src="assets/kit/step1.png" alt="Kit of parts" width="600px"/>
 
 The case ([pdf](assets/radiodan_3mm_laser_template.pdf)) is designed for a 5cm speaker powered by a USB-powered amplifier, such as [this one](http://www.ebay.com/itm/PAM8403-USB-Power-Cable-Stereo-Audio-Digital-Amplifier-Board-2-Channel-3W-2-UK-/121375724376?).
 
@@ -42,22 +42,13 @@ The complete list is this:
  * 2 5mm diameter nuts to fit 2 short 2mm diameter screws to hold in the Pi
 
 
-Step 1: Add the four bolts and the two internal mounts
+Step 2: Add the four bolts and the two internal mounts
 ======================================================
 
 Play particular attention to the placement of the arrows - they should point to the circular hole.
 
-<img src="assets/kit/step1.png" alt="four bolts and the two internal mounts" width="600px"/>
+<img src="assets/kit/step2.png" alt="four bolts and the two internal mounts" width="600px"/>
 
-
-Step 2: Add the four edge pieces and the corner pieces
-======================================================
-
-Make sure the top piece is the right way up and the correct way round (text faces outwards and the power button is on the right as you face it).
-
-There are 8 coner pieces on each corner.
-
-<img src="assets/kit/step2.png" alt="four edge pieces and coners" width="600px"/>
 
 
 Step 3: Glue the nuts to the internal mount
@@ -70,17 +61,23 @@ depending on your model. The B+ holes are identified with a plus sign. It's easi
 <img src="assets/kit/step3.png" alt="the nuts glued to the internal mount" width="600px"/>
 
 
-Step 4: Add the internal mount
-==============================
+
+Step 4: Add three of the edge pieces, the corner pieces, and the internal mount
+===============================================================================
 
 When the glue is set, fit the mount into the box, slotting it into the side pieces.
 
-<img src="assets/kit/step4.png" alt="add the internal mount" width="600px"/>
+There are 8 corner pieces on each corner.
+
+The three edge pieces just slot in.
+
+<img src="assets/kit/step4.png" alt="three edge pieces and corners and mount" width="600px"/>
 
 
 Step 5: Wire up the buttons and leds and attach them to the top
 ===============================================================
 
+Make sure the top piece is the right way up and the correct way round (text faces outwards and the power button is on the right as you face it).
 
 For the wiring you need to consult this [fritzing diagram](assets/Radiodan_app.fzz)@@fixme.
 

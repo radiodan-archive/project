@@ -156,7 +156,7 @@ Again fit the loops of wire in where you can.
 Step 13: Add the back of the case
 =================================
 
-Using the butterfly screws, and feeding the power cable through the hold in the back of the case.
+Using the butterfly screws, and feeding the power cable through the hole in the back of the case.
 
 <img src="assets/kit/step13.png" alt="add the back of the case" width="600px"/>
 

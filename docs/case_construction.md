@@ -145,7 +145,7 @@ Connect the amp to the top USB port, fitting loops of wire in where you can.
 <img src="assets/kit/step11.png" alt="add the USB amp" width="600px"/>
 
 
-Step 12: Connect the AMP to the 3.5mm audio connector
+Step 12: Connect the Amp to the 3.5mm audio connector
 =====================================================
 
 Again fit the loops of wire in where you can.

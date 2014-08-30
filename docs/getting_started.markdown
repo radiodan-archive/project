@@ -36,30 +36,30 @@ Optional
 Getting started
 ===============
 
-## 1. Download [this Raspberry PI NOOBS image](http://dev.notu.be/2014/05/radiodan/) (822M zip)
+## 1. Download [this Raspberry PI img](http://dev.notu.be/2014/08/radiodan_img/) (1G gzip)
 
-This is a custom image that we have created using the [NOOBS technique](http://www.raspberrypi.org/introducing-noobs/) which is mostly 
+This is a custom image which is mostly 
 Raspian Wheezy with [Radiodan cold_start](https://github.com/radiodan/cold_start) which includes 
 [radiodan](https://github.com/pixelblend/radiodan) and [radiodan_example](https://github.com/radiodan/radiodan_example) and 
 [radiodan_example](https://github.com/radiodan/radiodan_example_physical_interface) (github links)
 
 ## 2. Put the image on the SD card using the SD card reader
 
-Unzip the NOOBs file and drag and drop the contents onto a newly formatted card - specific instructions for your platform are in the README.
+e.g.
 
-## 3. Eject the disk from your SD card reader and assemble the components, like this:
+    diskutil list
+    diskutil unmountDisk /dev/diskn
+    sudo dd bs=1m if=/dev/diskn of=~/Downloads/radiodan.img
+
+## 3. Eject the disk from your SD card reader and assemble the basic set of components, like this:
 
 <img src="assets/pi_components.jpg" alt= "cables layout" width="600"/>
 
 ## 4. Plug the Pi in
 
-And wait.
+And wait about 2 minutes.
 
-NOOBs really simplifies the process, but it does take a while to work, usually around an hour. If you plug your Pi into a monitor you can see 
-the progress, otherwise the green led on the pi will be on and intermittently flashing if it's working. If that doesn't happen, check that 
-the SD card is seated correctly. I have had trouble with some SD cards just not running NOOBs at all.
-
-## 5. Set up the Pi on the wif
+## 5. Set up the Pi on the wifi
 
 When NOOBS is installed,  you should see a new wifi network called 'radiodan-configuration'.
 
@@ -118,4 +118,4 @@ Assemble everything according to this diagram:
 
 <a href="assets/Radiodan_app.fzz"><img src="assets/Radiodan_app.png" alt="Fritzing diagram"/></a>
 
-This is quite complicated, because the rotary encoders use so many pins. We're working on a simple two-button version.
+This is quite complicated, because the rotary encoders use so many pins. <a href="case_construction.md">Here's a simpler, 2-button, 1 led version</a>.

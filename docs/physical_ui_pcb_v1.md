@@ -20,7 +20,7 @@ Instructions
 1. Start with the 2 120R resistors.
 ![](./assets/physical-ui-pcb-v1/1.jpg)
 
-2. The go in the holes marked R3 and R6. The solid box outline should be facing up.
+2. The go in the holes marked R1 and R4. The solid box outline should be facing up.
 ![](./assets/physical-ui-pcb-v1/2.jpg)
 
 3. Next fill the other 4 boxes marked R with the remaining 4 resistors.
